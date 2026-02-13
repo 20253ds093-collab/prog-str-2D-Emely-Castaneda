@@ -2,6 +2,7 @@
 public class Main {
     public static void main(String[] args) {
 
+
 //Herencia
         Perro dogo= new Perro("Dogo");
         Gato rawrl = new Gato("rawrl");
