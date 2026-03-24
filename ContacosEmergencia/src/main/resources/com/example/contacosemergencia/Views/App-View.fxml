@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="391.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.contacosemergencia.Controllers.AppController">
+   <children>
+      <Label text="Nombre" />
+      <TextField fx:id="txtNombre" />
+      <Label layoutX="10.0" layoutY="10.0" text="Telefono" />
+      <TextField fx:id="txtTelefono" layoutX="10.0" layoutY="27.0" />
+      <Label layoutX="10.0" layoutY="52.0" text="Parentesco" />
+      <ComboBox fx:id="cbParentesco" prefWidth="150.0" />
+      <HBox prefHeight="29.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onAgregar" text="Agregar" />
+            <Button mnemonicParsing="false" onAction="#onBuscar" text="Buscar" />
+            <Button mnemonicParsing="false" onAction="#onActualizar" text="Actualizar" />
+            <Button mnemonicParsing="false" onAction="#onEliminar" text="Eliminar" />
+         </children>
+      </HBox>
+      <ListView fx:id="lvContactos" prefHeight="238.0" prefWidth="442.0" />
+   </children>
+</VBox>
